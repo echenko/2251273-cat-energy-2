@@ -1,0 +1,17 @@
+.news {
+  align-items: center;
+  width: $mobile-width;
+  background-color: #f0f0f0;
+}
+
+@media (min-width: $tablet-width) {
+  .news {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .news {
+    width: $desktop-width;
+  }
+}
