@@ -19,17 +19,27 @@
 <body class="page__body">
   <header class="header">
     <h1 class="visually-hidden">Cat Energy</h1>
-    <a class="header__logo" href="./index.html">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="./images/logo/desktop-logo.svg" type="image/svg+xml" width="202"
-          height="59">
-        <source media="(min-width: 768px)" srcset="./images/logo/tablet-logo.svg" type="image/svg+xml" width="202"
-          height="59">
-        <img src="./images/logo/mobile-logo.svg" alt="Логотип Cat Energy" width="202" height="59">
-      </picture>
-    </a>
-    <button class="header__button" type="button">Меню</button>
-    <nav class="header__navigation navigation">
+    <div class="header__wrapper">
+      <a class="header__logo" href="./index.html">
+        <picture>
+          <!-- <source media="(min-width: 1440px)" srcset="./images/logo/desktop-logo.svg" type="image/svg+xml" width="202"
+            height="59">
+          <source media="(min-width: 768px)" srcset="./images/logo/tablet-logo.svg" type="image/svg+xml" width="202"
+            height="59"> -->
+          <img src="./images/logo/mobile-logo.svg" alt="Логотип Cat Energy" width="34" height="38">
+
+        </picture>
+        <picture>
+          <!-- <source media="(min-width: 1440px)" srcset="./images/logo/desktop-logo.svg" type="image/svg+xml" width="202"
+            height="59">
+          <source media="(min-width: 768px)" srcset="./images/logo/tablet-logo.svg" type="image/svg+xml" width="202"
+            height="59"> -->
+          <img src="./images/logo/header-logo.svg" alt="Логотип Cat Energy" width="101" height="20">
+        </picture>
+      </a>
+      <button class="header__button header__button--open" type="button" aria-label="Открыть меню"></button>
+    </div>
+    <nav class="header__navigation navigation navigation--open no-js">
       <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link navigation__link--active" href="./index.html">Главная</a>
@@ -46,8 +56,10 @@
   <main class="page__main main">
     <section class="main__hero hero">
       <h2 class="visually-hidden">Корм для котов</h2>
-      <p class="hero__title">Функциональное питание для котов</p>
-      <p class="hero__description">Занялся собой? Займись котом!</p>
+      <div class="hero__wrapper">
+        <p class="hero__title">Функциональное питание для котов</p>
+        <p class="hero__description">Занялся собой? Займись котом!</p>
+      </div>
       <picture>
         <!-- webp -->
         <source media="(min-width: 1440px)"
