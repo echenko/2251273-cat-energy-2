@@ -304,36 +304,36 @@
         </li>
       </ul>
     </section>
-    <section class="main__additional additional">
+    <section class="main__goods goods">
       <h2 class="visually-hidden">Дополнительные товары Cat Energy</h2>
-      <p class="additional__title">Дополнительные товары</p>
-      <ul class="additional__list goods">
+      <p class="goods__title">Дополнительные товары</p>
+      <ul class="goods__list">
         <li class="goods__item">
-          <p class="goods__title">Сахарозаменитель</p>
-          <p class="goods__text">1 упаковка (100 г)</p>
+          <p class="goods__name">Сахарозаменитель</p>
+          <p class="goods__description">1 упаковка (100 г)</p>
           <p class="goods__price">150 ₽</p>
           <button class="goods__button" type="button">Заказать</button>
         </li>
         <li class="goods__item">
-          <p class="goods__title">Питьевая вода</p>
-          <p class="goods__text">5 литров</p>
+          <p class="goods__name">Питьевая вода</p>
+          <p class="goods__description">5 литров</p>
           <p class="goods__price">50 ₽</p>
           <button class="goods__button" type="button">Заказать</button>
         </li>
         <li class="goods__item">
-          <p class="goods__title">Молоко</p>
-          <p class="goods__text">1 литр</p>
+          <p class="goods__name">Молоко</p>
+          <p class="goods__description">1 литр</p>
           <p class="goods__price">100 ₽</p>
           <button class="goods__button" type="button">Заказать</button>
         </li>
         <li class="goods__item">
-          <p class="goods__title">витамины</p>
-          <p class="goods__text">1 упаковка (30 г)</p>
+          <p class="goods__name">витамины</p>
+          <p class="goods__description">1 упаковка (30 г)</p>
           <p class="goods__price">300 ₽</p>
           <button class="goods__button" type="button">Заказать</button>
         </li>
       </ul>
-      <div class="additional__promo promo">
+      <div class="goods__promo promo">
         <img class="promo__image" src="#" alt="Promo image" width="280" height="290">
         <p class="promo__title">Закажите все и получите чехол для кота в подарок!</p>
       </div>
@@ -344,7 +344,8 @@
       <p class="news__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form class="news__form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="news__label" for="owner-email">
-          <input class="news__input" type="email" placeholder="кuklachev@gmail.com" name="owner-email" id="owner-email">
+          <input class="news__input" type="email" placeholder="Введите ваш e-mail" name="owner-email" id="owner-email"
+            value="кuklachev@gmail.com" required>
         </label>
         <button class="news__button" type="submit">Подписаться</button>
       </form>
@@ -357,7 +358,9 @@
     </section>
   </main>
   <footer class="page__footer footer">
-    <a class="footer__logo" href="index.html">LoGo</a>
+    <a class="footer__logo" href="index.html">
+      <img src="./images/logo/footer-logo.svg" alt="Логотип Cat Energy" width="128" height="24">
+    </a>
     <ul class="footer__social social">
       <li class="social__item">
         <a class="social__link" href="#" aria-label="Вконтакте">
