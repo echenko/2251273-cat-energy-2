@@ -1,6 +1,6 @@
 //
 .programms {
-  padding: 0 20px 20px;
+  padding: 0 20px;
   align-items: center;
   width: $mobile-width;
 }
@@ -17,7 +17,7 @@
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 10px 20px;
-  padding: 23px 21px;
+  padding: 23px 21px 22px;
   background-color: $secondary-color-bg;
 }
 
