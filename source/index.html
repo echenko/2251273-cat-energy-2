@@ -19,17 +19,27 @@
 <body class="page__body">
   <header class="header">
     <h1 class="visually-hidden">Cat Energy</h1>
-    <a class="header__logo" href="./index.html">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="./images/logo/desktop-logo.svg" type="image/svg+xml" width="202"
-          height="59">
-        <source media="(min-width: 768px)" srcset="./images/logo/tablet-logo.svg" type="image/svg+xml" width="202"
-          height="59">
-        <img src="./images/logo/mobile-logo.svg" alt="Логотип Cat Energy" width="202" height="59">
-      </picture>
-    </a>
-    <button class="header__button" type="button">Меню</button>
-    <nav class="header__navigation navigation">
+    <div class="header__wrapper">
+      <a class="header__logo" href="./index.html">
+        <picture>
+          <!-- <source media="(min-width: 1440px)" srcset="./images/logo/desktop-logo.svg" type="image/svg+xml" width="202"
+            height="59">
+          <source media="(min-width: 768px)" srcset="./images/logo/tablet-logo.svg" type="image/svg+xml" width="202"
+            height="59"> -->
+          <img src="./images/logo/mobile-logo.svg" alt="Логотип Cat Energy" width="34" height="38">
+
+        </picture>
+        <picture>
+          <!-- <source media="(min-width: 1440px)" srcset="./images/logo/desktop-logo.svg" type="image/svg+xml" width="202"
+            height="59">
+          <source media="(min-width: 768px)" srcset="./images/logo/tablet-logo.svg" type="image/svg+xml" width="202"
+            height="59"> -->
+          <img src="./images/logo/header-logo.svg" alt="Логотип Cat Energy" width="101" height="20">
+        </picture>
+      </a>
+      <button class="header__button header__button--close" type="button" aria-label="Открыть меню"></button>
+    </div>
+    <nav class="header__navigation navigation navigation--close no-js">
       <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link navigation__link--active" href="./index.html">Главная</a>
@@ -46,25 +56,27 @@
   <main class="page__main main">
     <section class="main__hero hero">
       <h2 class="visually-hidden">Корм для котов</h2>
-      <p class="hero__title">Функциональное питание для котов</p>
-      <p class="hero__description">Занялся собой? Займись котом!</p>
+      <div class="hero__wrapper">
+        <p class="hero__title">Функциональное питание для котов</p>
+        <p class="hero__description">Занялся собой? Займись котом!</p>
+      </div>
       <picture>
         <!-- webp -->
-        <source media="(min-width: 1440px)"
+        <!-- <source media="(min-width: 1440px)"
           srcset="./images/hero/desctop-image-hero@1x.webp 1x, ./images/hero/desctop-image-hero@2x.webp 2x"
           type="image/webp" width="552" height="499">
         <source media="(min-width: 768px)"
           srcset="./images/hero/tablet-image-hero@1x.webp 1x, ./images/hero/tablet-image-hero@2x.webp 2x"
-          type="image/webp" width="709" height="609">
+          type="image/webp" width="709" height="609"> -->
         <source srcset="./images/hero/mobile-image-hero@1x.webp 1x, ./images/hero/mobile-image-hero@2x.webp 2x"
           type="image/webp" width="280" height="270">
         <!-- jpeg/png -->
-        <source media="(min-width: 1440px)"
+        <!-- <source media="(min-width: 1440px)"
           srcset="./images/hero/desctop-image-hero@1x.png 1x, ./images/hero/desctop-image-hero@2x.png 2x"
           type="image/jpeg" width="552" height="499">
         <source media="(min-width: 768px)"
           srcset="./images/hero/tablet-image-hero@1x.png 1x, ./images/hero/tablet-image-hero@2x.png 2x"
-          type="image/jpeg" width="709" height="609">
+          type="image/jpeg" width="709" height="609"> -->
         <img class="hero__image" src="./images/hero/mobile-image-hero@1x.png" srcset="./images/hero/mobile-hero@2x.png"
           alt="Hero image" width="280" height="270">
       </picture>
@@ -74,14 +86,30 @@
       <h2 class="visually-hidden">Популярные программы</h2>
       <ul class="programms__list">
         <li class="programms__item">
-          <img class="programms__image" src="#" alt="Programms image" width="50" height="50">
+          <div class="programms__wrapper">
+            <!-- <source media="(min-width: 1440px)"
+              srcset="./images/hero/desctop-image-hero@1x.png 1x, ./images/hero/desctop-image-hero@2x.png 2x"
+              type="image/jpeg" width="552" height="499">
+            <source media="(min-width: 768px)"
+              srcset="./images/hero/tablet-image-hero@1x.png 1x, ./images/hero/tablet-image-hero@2x.png 2x"
+              type="image/jpeg" width="709" height="609"> -->
+            <img class="programms__image programms__image--slim" src="./icons/stack.svg#cat_cat-slim" alt="Programms slim image" width="50" height="53">
+          </div>
           <p class="programms__title">Похудение</p>
           <p class="programms__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="programms__button" href="catalog.html">Каталог slim</a>
         </li>
         <li class="programms__item">
-          <img class="programms__image" src="#" alt="Programms image" width="50" height="50">
+          <div class="programms__wrapper">
+            <!-- <source media="(min-width: 1440px)"
+              srcset="./images/hero/desctop-image-hero@1x.png 1x, ./images/hero/desctop-image-hero@2x.png 2x"
+              type="image/jpeg" width="552" height="499">
+            <source media="(min-width: 768px)"
+              srcset="./images/hero/tablet-image-hero@1x.png 1x, ./images/hero/tablet-image-hero@2x.png 2x"
+              type="image/jpeg" width="709" height="609"> -->
+            <img class="programms__image programms__image--pro" src="./icons/stack.svg#cat_cat-pro" alt="Programms pro image" width="67" height="28">
+          </div>
           <p class="programms__title">Набор массы</p>
           <p class="programms__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
             Pro поможет вашему коту нарастить необходимые мышцы!</p>
