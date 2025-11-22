@@ -47,7 +47,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  scale: 1.35;
+  scale: 1;
 }
 
 .programms__title {
@@ -67,7 +67,7 @@
 .programms__description {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 23px;
   grid-column: 1 / 3;
   grid-row: 2 / 3;
   margin: 0;
