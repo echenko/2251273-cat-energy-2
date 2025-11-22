@@ -40,4 +40,6 @@
   color: $main-color-text;
   text-transform: uppercase;
   text-decoration: none;
+  border-top: 2px solid $main-color-border;
+  cursor: pointer;
 }
