@@ -23,10 +23,10 @@
   display: block;
   width: 100vw;
   top: 0;
-  left: 50%;
+  right: 0%;
   height: 1px;
   background-color: $auxiliary-color-border;
-  transform: translateX(-50%);
+  box-shadow: 100vw 0 0 0 $auxiliary-color-border;
 }
 
 .catalog__title::after {
@@ -35,10 +35,10 @@
   display: block;
   width: 100vw;
   bottom: 0;
-  left: 50%;
+  right: 0%;
   height: 1px;
   background-color: $auxiliary-color-border;
-  transform: translateX(-50%);
+  box-shadow: 100vw 0 0 0 $auxiliary-color-border;
 }
 
 .catalog__list {
@@ -55,10 +55,10 @@
   display: block;
   width: 100vw;
   bottom: 0;
-  left: 50%;
+  right: 0%;
   height: 1px;
   background-color: $auxiliary-color-border;
-  transform: translateX(-50%);
+  box-shadow: 100vw 0 0 0 $auxiliary-color-border;
 }
 
 // @media (min-width: $tablet-width) {
