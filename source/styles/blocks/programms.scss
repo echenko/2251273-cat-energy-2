@@ -1,4 +1,3 @@
-//
 .programms {
   padding: 0 20px;
   align-items: center;
@@ -113,14 +112,14 @@
   background-image: url("../../icons/stack.svg#icon-arrow");
 }
 
-@media (min-width: $tablet-width) {
-  .programms {
-    width: $tablet-width;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   .programms {
+//     width: $tablet-width;
+//   }
+// }
 
-@media (min-width: $desktop-width) {
-  .programms {
-    width: $desktop-width;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   .programms {
+//     width: $desktop-width;
+//   }
+// }
