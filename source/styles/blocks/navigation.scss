@@ -26,9 +26,26 @@
 .navigation.no-js > .navigation__list {
   position: relative;
   max-height: 100vh;
+  background-color: $main-color-bg;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.navigation--close > .navigation__list {
+  max-height: 0;
+}
+
+.navigation.no-js > .navigation__list {
+  position: relative;
+  max-height: 100vh;
 }
 
 .navigation__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,6 +58,8 @@
   color: $main-color-text;
   text-transform: uppercase;
   text-decoration: none;
+  border-top: 2px solid $main-color-border;
+  cursor: pointer;
   border-top: 2px solid $main-color-border;
   cursor: pointer;
 }
