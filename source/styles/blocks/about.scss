@@ -11,7 +11,6 @@
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 0%;
-
   color: $main-color-text;
 }
 
@@ -50,18 +49,17 @@
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0%;
-
   color: $special-color-text;
 }
 
-@media (min-width: $tablet-width) {
-  .about {
-    width: $tablet-width;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   .about {
+//     width: $tablet-width;
+//   }
+// }
 
-@media (min-width: $desktop-width) {
-  .about {
-    width: $desktop-width;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   .about {
+//     width: $desktop-width;
+//   }
+// }

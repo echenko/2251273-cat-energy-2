@@ -1,10 +1,12 @@
 .social {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-self: stretch;
+  align-self: center;
   gap: 24px;
-  padding: 20px 0 19px;
+  width: calc($mobile-width - 40px);
+  padding: 20px 20px 19px;
   border-top: 1px solid $auxiliary-color-border;
   border-bottom: 1px solid $auxiliary-color-border;
 }

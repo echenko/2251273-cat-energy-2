@@ -1,11 +1,14 @@
 .map {
-  align-items: center;
-  width: $mobile-width;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
 }
 
 .map__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-self: center;
+  width: $mobile-width;
   padding: 27px 20px 25px;
 }
 
@@ -16,9 +19,7 @@
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0%;
-
   color: $main-color-text;
-
   text-transform: uppercase;
 }
 
@@ -34,7 +35,7 @@
 }
 
 .map__container {
-  width: 320px;
+  width: 100%;
   height: 362px;
   border: none;
   background-image:
@@ -50,7 +51,7 @@
 }
 
 .map__mobile {
-  width: 320px;
+  width: 100%;
   height: 362px;
   border: none;
 }
@@ -59,14 +60,14 @@
   display: none;
 }
 
-@media (min-width: $tablet-width) {
-  .map {
-    width: $tablet-width;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   .map {
+//     width: $tablet-width;
+//   }
+// }
 
-@media (min-width: $desktop-width) {
-  .map {
-    width: $desktop-width;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   .map {
+//     width: $desktop-width;
+//   }
+// }
