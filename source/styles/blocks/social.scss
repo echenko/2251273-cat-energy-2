@@ -1,3 +1,17 @@
 .social {
   @include list-reset;
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+  gap: 24px;
+  padding: 20px 0 19px;
+  border-top: 1px solid $auxiliary-color-border;
+  border-bottom: 1px solid $auxiliary-color-border;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $main-color-text;
 }
