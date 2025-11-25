@@ -176,7 +176,36 @@
 }
 
 .form__label--owner {
+  position: relative;
   gap: 15px;
+}
+
+.form__label--owner[for="email-owner"]::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  right: 0;
+  background-image: url("../../icons/stack.svg#icon-email");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(-50%, -50%);
+}
+
+.form__label--owner[for="phone-owner"]::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  right: 0;
+  background-image: url("../../icons/stack.svg#icon-phone");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(-50%, -50%);
 }
 
 .form__label--additional {
@@ -210,16 +239,40 @@
 }
 
 .form__radio-mark {
+  position: relative;
   width: 30px;
   height: 30px;
+  border-radius: 50%;
+  border: 1px solid $secondary-color-border;
+}
+
+.form__input[type="radio"]:checked + .form__radio-mark::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
   background-color: $special-color-bg;
+  transform: translate(-50%, -50%);
 }
 
 .form__checkbox-mark {
+  position: relative;
   width: 30px;
   height: 30px;
-  background-color: $special-color-bg;
+  border: 1px solid $secondary-color-border;
 }
+
+.form__input[type="checkbox"]:checked + .form__checkbox-mark {
+  background-image: url("../../icons/stack.svg#icon-tick");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px 26px;
+}
+
 
 .form__textarea {
   font-family: "Oswald", "Arial", sans-serif;
