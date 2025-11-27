@@ -17,3 +17,9 @@
   align-items: center;
   color: $main-color-text;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+  }
+}

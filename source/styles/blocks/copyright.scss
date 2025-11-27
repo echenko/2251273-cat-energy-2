@@ -6,3 +6,11 @@
   width: calc($mobile-width - 40px);
   padding: 20px 0 19px;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    justify-content: end;
+    gap: 23px;
+    padding: 20px 9px 19px;
+  }
+}
