@@ -52,11 +52,20 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
-// @media (min-width: $tablet-width) {
-//   .slider {
-//     min-width: $tablet-width;
-//   }
-// }
+@media (min-width: $tablet-width) {
+  .slider {
+    width: 100%;
+    min-height: 462px;
+    background-color: $tint-color-bg;
+  }
+
+  .slider__wrapper {
+    position: absolute;
+    top: -151px;
+    width: 560px;
+    height: 512px;
+  }
+}
 
 // @media (min-width: $desktop-width) {
 //   .slider {

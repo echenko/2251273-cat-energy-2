@@ -162,11 +162,11 @@
         <ul class="example__list">
           <li class="example__item">
             <p class="example__parameter">5 кг</p>
-            <p class="example__annotation">снижение <br> веса</p>
+            <p class="example__annotation">снижение <br class="example__annotation example__annotation--break"> веса</p>
           </li>
           <li class="example__item">
             <p class="example__parameter">60 дней</p>
-            <p class="example__annotation">затрачено <br> времени</p>
+            <p class="example__annotation">затрачено <br class="example__annotation example__annotation--break"> времени</p>
           </li>
         </ul>
         <p class="example__cost">Затраты на питание: 15 000 РУБ.</p>
@@ -176,16 +176,16 @@
           <div class="slider__before">
             <picture>
               <!-- webp -->
-              <!-- <source media="(min-width: 768px)"
+              <source media="(min-width: 768px)"
                 srcset="./images/example/tablet-example-before@1x.webp 1x, ./images/example/tablet-example-before@2x.webp 2x"
-                type="image/webp" width="709" height="609"> -->
+                type="image/webp" width="560" height="512">
               <source
                 srcset="./images/example/mobile-example-before@1x.webp 1x, ./images/example/mobile-example-before@2x.webp 2x"
                 type="image/webp" width="280" height="256">
               <!-- jpeg/png -->
-              <!-- <source media="(min-width: 768px)"
+              <source media="(min-width: 768px)"
                 srcset="./images/example/tablet-example-before@1x.png 1x, ./images/example/tablet-example-before@2x.png 2x"
-                type="image/jpeg" width="560" height="512"> -->
+                type="image/jpeg" width="560" height="512">
               <img class="slider__image slider__image--before" src="./images/example/mobile-example-before@1x.png"
                 srcset="./images/example/mobile-example-before@2x.png" alt="Hero image" width="280" height="256">
             </picture>
@@ -193,22 +193,21 @@
           <div class="slider__after">
             <picture>
               <!-- webp -->
-              <!-- <source media="(min-width: 768px)"
+              <source media="(min-width: 768px)"
                 srcset="./images/example/tablet-example-after@1x.webp 1x, ./images/example/tablet-example-after@2x.webp 2x"
-                type="image/webp" width="709" height="609"> -->
+                type="image/webp" width="560" height="512">
               <source
                 srcset="./images/example/mobile-example-after@1x.webp 1x, ./images/example/mobile-example-after@2x.webp 2x"
                 type="image/webp" width="280" height="256">
               <!-- jpeg/png -->
-              <!-- <source media="(min-width: 768px)"
+              <source media="(min-width: 768px)"
                 srcset="./images/example/tablet-example-after@1x.png 1x, ./images/example/tablet-example-after@2x.png 2x"
-                type="image/jpeg" width="560" height="512"> -->
+                type="image/jpeg" width="560" height="512">
               <img class="slider__image slider__image--after" src="./images/example/mobile-example-after@1x.png"
                 srcset="./images/example/mobile-example-after@2x.png" alt="Hero image" width="280" height="256">
             </picture>
           </div>
-        </div>
-        <label for="slider">
+                  <label for="slider">
           <input class="visually-hidden" type="number" name="slider" id="slider" value="50" min="0" max="100">
         </label>
         <button class="slider__button" type="button" aria-label="Управление слайдером.">
@@ -216,22 +215,27 @@
             <use href="./icons/stack.svg#icon-thumb"></use>
           </svg>
         </button>
+        </div>
       </div>
     </section>
     <section class="main__map map">
       <h2 class="visually-hidden">Приглашаем к сотрудничеству!</h2>
       <div class="map__wrapper">
         <p class="map__title">Приглашаем <br> к сотрудничеству дилеров!</p>
-        <p class="map__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="map__description">ул. Большая Конюшенная, д. 19/8 <br class="map__description map__description--break">
+          <span>Санкт-Петербург</span>
+        </p>
       </div>
       <div class="map__container">
         <iframe class="map__mobile no-js"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa1871c134b734bf6b0c3ea31a3a74c040d530c4a3d637cc10aa00b43f8bad08b&amp;source=constructor"></iframe>
+        <iframe class="map__tablet no-js" src="https://yandex.ru/map-widget/v1/?um=constructor%3Accfb0b6bacd1ddf91909894d9c56fdf406566682e47fe284f293f4cb62531f6a&amp;source=constructor"></iframe>
       </div>
     </section>
   </main>
   <footer class="page__footer footer">
-    <a class="footer__logo" href="index.html">
+    <div class="footer__wrapper">
+      <a class="footer__logo" href="index.html">
       <img src="./images/logo/footer-logo.svg" alt="Логотип Cat Energy" width="128" height="24">
     </a>
     <ul class="footer__social social">
@@ -265,6 +269,8 @@
         <use href="./icons/stack.svg#academy_logo-academy"></use>
       </svg>
     </a>
+
+    </div>
   </footer>
   <script src="./scripts/index.js"></script>
 </body>
