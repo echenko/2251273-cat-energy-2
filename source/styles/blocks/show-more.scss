@@ -28,7 +28,6 @@
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0%;
-
   color: $special-color-text;
 }
 
@@ -47,4 +46,42 @@
   color: $special-color-text;
   text-transform: uppercase;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .show-more {
+    width: 100%;
+    justify-content: end;
+  }
+
+  .show-more__icon {
+    height: 100%;
+    align-self: center;
+    width: 60px;
+    margin: 0;
+    padding: 0 0 47px;
+  }
+
+  .show-more__title {
+    width: 60%;
+    margin: 0;
+    padding: 0 0 23px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .show-more__text {
+    width: 70%;
+    margin: 0;
+    padding: 0 0 72px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  .show-more__button {
+    margin: 10px 0 0;
+    padding: 11px 0 9px;
+  }
 }
