@@ -51,3 +51,33 @@
   text-align: center;
   color: $secondary-color-text;
 }
+
+@media (min-width: $tablet-width) {
+  .promo {
+    flex-direction: row;
+    align-items: center;
+    width: 707px;
+    height: 200px;
+    margin: 70px 0 0;
+    padding: 42px 124px 0 30px;
+    background-image:
+      linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../images/promo/promo-tablet@1x.webp") 1x,
+        url("../../images/promo/promo-tablet@2x.webp") 2x,
+        url("../../images/promo/promo-tablet@1x.png") 1x,
+        url("../../images/promo/promo-tablet@2x.png") 2x
+      );
+  }
+
+  .promo__icon {
+    width: 80px;
+    height: 82px;
+    transform: translateY(-24px) translateX(48px);
+  }
+
+
+  .promo__title {
+    text-align: left;
+  }
+}
