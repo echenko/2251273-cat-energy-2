@@ -50,16 +50,11 @@
     align-items: center;
   }
 
-  .navigation__list {
-    position: relative;
-    flex-flow: row wrap;
-    max-height: 100vh;
-  }
-
   .navigation > .navigation__list {
     position: relative;
+    flex-flow: row wrap;
     justify-content: end;
-    gap: 13px;
+    gap: 24px;
     max-height: 100vh;
   }
 
@@ -67,7 +62,7 @@
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0%;
-    padding: 10px 10px 13px;
+    padding: 10px 5px 13px;
     border: none;
   }
 
@@ -80,9 +75,32 @@
     position: absolute;
     display: block;
     bottom: 3px;
-    left: 10px;
-    right: 10px;
+    left: 5px;
+    right: 5px;
     height: 2px;
     background-color: $special-color-bg;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation > .navigation__list {
+    gap: 0 33px;
+  }
+
+  .navigation__list {
+    background-color: inherit;
+  }
+
+  .navigation__link {
+    padding: 10px 0;
+    color: $secondary-color-text;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .navigation__link--active::after {
+    left: 0;
+    right: 0;
+    background-color: $main-color-bg;
   }
 }

@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 24px 0 40px;
+  padding: 25px 0 40px;
   background-color: $tint-color-bg;
 }
 
@@ -93,20 +93,15 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    // width: $tablet-width;
     background-color: $main-color-bg;
   }
 
   .example__wrapper {
     display: grid;
     grid-template-columns: auto 1fr;
-    // justify-content: start;
-    // align-items: start;
-
     gap: 0;
     width: $tablet-width;
-    // min-height: 620px;
-    padding: 21px 30px 235px;
+    padding: 20px 30px 235px;
   }
 
   .example__title {
