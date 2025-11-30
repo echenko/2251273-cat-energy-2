@@ -68,6 +68,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .map--secondary {
+    background-color: $secondary-color-bg;
+    padding: 40px 0 0;
+  }
+
   .map__wrapper {
     width: $tablet-width;
     padding: 20px 70px 61px;
@@ -89,7 +94,6 @@
     line-height: 20px;
     text-align: right;
   }
-
 
   .map__container {
     height: 400px;

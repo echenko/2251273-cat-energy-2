@@ -70,6 +70,10 @@
       );
   }
 
+  .promo::after {
+    display: none;
+  }
+
   .promo__icon {
     width: 80px;
     height: 82px;

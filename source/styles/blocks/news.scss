@@ -108,14 +108,16 @@
     width: 80%;
     font-size: 24px;
     line-height: 32px;
-    padding: 5px 0 0;
+    padding: 4px 0 0;
   }
 
   .news__form {
     display: grid;
     grid-template-columns: 132fr 90fr;
+    justify-content: center;
+    align-items: center;
     gap: 0;
-    padding: 23px 38px 0;
+    padding: 24px 38px 80px;
   }
 }
 
