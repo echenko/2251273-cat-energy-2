@@ -157,8 +157,57 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .example {
-//     width: $desktop-width;
-//   }
-// }
+@media (min-width: $desktop-width) {
+  .example {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .example__title {
+    grid-column: 1 / 3;
+    place-self: center center;
+    width: $desktop-width;
+    padding: 22px 20px 75px 113px;
+  }
+
+  .example__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-items: end;
+    place-self: stretch end;
+    align-content: end;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    gap: 55px 0;
+    width: 722px;
+    min-height: 450px;
+    padding: 20px 177px 0 112px;
+    background-color: $secondary-color-bg;
+  }
+
+  .example__description {
+    padding: 50px 0 0;
+  }
+
+  .example__list {
+    justify-content: start;
+    padding: 15px 0 0;
+  }
+
+  .example__annotation {
+    background-color: $secondary-color-bg;
+  }
+
+  .example__cost {
+    display: flex;
+    gap: 65px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    place-self: center start;
+    width: 100%;
+    text-align: left;
+  }
+}

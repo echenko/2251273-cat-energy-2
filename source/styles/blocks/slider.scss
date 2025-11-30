@@ -67,8 +67,16 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .slider {
-//     min-width: $desktop-width;
-//   }
-// }
+@media (min-width: $desktop-width) {
+  .slider {
+    min-width: 100%;
+    margin: 0;
+    background-color: $secondary-color-bg;
+    box-shadow: 100vw 0 0 0 $secondary-color-bg;
+  }
+
+  .slider__wrapper {
+    top: -135px;
+    left: 50px;
+  }
+}
