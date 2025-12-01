@@ -144,8 +144,8 @@
 
   .goods__item {
     grid-template-columns: 1fr auto minmax(min-content, 62px);
-    gap: 25px 30px;
-    padding: 24px 37px 27px;
+    gap: 22px 30px;
+    padding: 26px 37px 28px;
   }
 
   .goods__item:not(:last-child) {
@@ -164,7 +164,8 @@
 
   .goods__description,
   .goods__price {
-    justify-self: flex-end;
+    // justify-self: flex-end;
+    place-self: end end;
     font-size: 16px;
     line-height: 20px;
   }
