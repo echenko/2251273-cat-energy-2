@@ -14,3 +14,10 @@
     padding: 20px 9px 19px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    width: fit-content;
+    place-self: center end;
+  }
+}
