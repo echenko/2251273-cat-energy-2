@@ -1,7 +1,7 @@
 .about {
   align-items: center;
   width: $mobile-width;
-  padding: 19px 20px 50px;
+  padding: 20px 20px 49px;
 }
 
 .about__title {
@@ -109,8 +109,18 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .about {
-//     width: $desktop-width;
-//   }
-// }
+@media (min-width: $desktop-width) {
+  .about {
+    width: $desktop-width;
+    padding: 31px 110px 7px;
+  }
+
+  .about__list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px 80px;
+  }
+
+  .about__description {
+    width: 100%;
+  }
+}

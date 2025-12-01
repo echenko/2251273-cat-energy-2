@@ -75,7 +75,7 @@
 
   .map__wrapper {
     width: $tablet-width;
-    padding: 20px 70px 61px;
+    padding: 21px 70px 59px;
   }
 
   .map__title {
@@ -123,8 +123,28 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .map {
-//     width: $desktop-width;
-//   }
-// }
+@media (min-width: $desktop-width) {
+  .map {
+    position: relative;
+    // width: $desktop-width;
+  }
+
+  .map__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 565px;
+    padding: 62px 78px 60px 80px;
+    background-color: $main-color-bg;
+    transform: translate(-610px, -105px);
+  }
+
+  .map__title {
+    width: 163px;
+  }
+
+  .map__description {
+    width: 157px;
+    text-align: left;
+  }
+}

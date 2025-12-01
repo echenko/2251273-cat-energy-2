@@ -23,3 +23,10 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social {
+    width: fit-content;
+    place-self: center center;
+  }
+}
