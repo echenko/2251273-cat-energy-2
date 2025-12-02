@@ -15,7 +15,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $main-color-text;
+  color: $primary-color-bg;
+}
+
+.social__link:hover,
+.social__link:focus {
+  outline: none;
+  color: $special-color-bg;
+}
+
+.social__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

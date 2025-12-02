@@ -7,6 +7,28 @@
   padding: 20px 0 19px;
 }
 
+.copyright:hover,
+.copyright:focus {
+  outline: none;
+}
+
+.copyright:active {
+  opacity: 0.3;
+}
+
+.copyright__text {
+  color: $special-color-text;
+}
+
+.copyright__icon {
+  color: $primary-color-bg;
+}
+
+.copyright:hover .copyright__icon,
+.copyright:focus .copyright__icon {
+  color: $special-color-bg;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     width: fit-content;

@@ -45,11 +45,27 @@
   transform: translateX(-50%);
 }
 
+.slider__button:hover,
+.slider__button:focus {
+  background-color: $special-color-bg;
+  outline: none;
+}
+
+.slider__button:active {
+  opacity: 0.6;
+}
+
 .slider__thumb {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  color: $primary-color-bg;
+}
+
+.slider__button:hover > .slider__thumb,
+.slider__button:focus > .slider__thumb {
+  color: $special-color-bg;
 }
 
 @media (min-width: $tablet-width) {
