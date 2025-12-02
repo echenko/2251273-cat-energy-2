@@ -128,7 +128,7 @@
   opacity: 0.3;
 }
 
-@media (min-width: $tablet-width) {
+@media screen and (min-width: $tablet-width) {
   .programms {
     width: $tablet-width;
     padding: 0 30px;
@@ -199,7 +199,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media screen and (min-width: $desktop-width) {
   .programms {
     width: $desktop-width;
     padding: 82px 110px 40px;

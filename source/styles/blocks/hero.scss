@@ -91,22 +91,22 @@
   color: rgba($secondary-color-text, 0.3);
 }
 
-@media (min-width: $tablet-width) {
+@media screen and (min-width: $tablet-width) {
   .hero {
-    width: $tablet-width;
     justify-content: start;
     align-items: center;
     gap: 21px;
-    padding: 30px 30px 0;
+    width: $tablet-width;
     min-height: fit-content;
+    padding: 30px 30px 0;
   }
 
   .hero__wrapper {
     align-items: start;
+    min-height: fit-content;
     padding: 0;
     background-image: none;
     background-color: $main-color-bg;
-    min-height: fit-content;
   }
 
   .hero__title {
@@ -149,7 +149,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media screen and (min-width: $desktop-width) {
   .hero {
     position: relative;
     display: grid;
@@ -168,8 +168,8 @@
     align-items: end;
     gap: 40px;
     width: 100%;
-    padding: 75px 50px 290px 0;
     margin: 0;
+    padding: 75px 50px 290px 0;
   }
 
   .hero__title {

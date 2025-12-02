@@ -11,7 +11,7 @@
 }
 
 .show-more__title {
-  margin: 24px 0 0;
+  margin: 18px 0 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -55,7 +55,7 @@
   cursor: pointer;
 }
 
-@media (min-width: $tablet-width) {
+@media screen and (min-width: $tablet-width) {
   .show-more {
     width: 100%;
     justify-content: end;
@@ -93,7 +93,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media screen and (min-width: $desktop-width) {
   .show-more {
     width: 100%;
   }

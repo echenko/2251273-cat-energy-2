@@ -32,7 +32,7 @@
   outline: none;
 }
 
-@media (min-width: $tablet-width) {
+@media screen and (min-width: $tablet-width) {
   .footer {
     min-width: $tablet-width;
     padding: 0;
@@ -44,7 +44,7 @@
     grid-template-columns: repeat(3, 1fr);
     flex-direction: row;
     justify-content: space-between;
-    padding: 37px 20px 40px;
+    padding: 38px 20px 40px;
   }
 
   .footer__logo {
@@ -54,7 +54,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media screen and (min-width: $desktop-width) {
   .footer__wrapper {
     width: $desktop-width;
     padding: 48px 101px 70px 99px;

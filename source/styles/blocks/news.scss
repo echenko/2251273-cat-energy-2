@@ -80,10 +80,10 @@
   letter-spacing: 0%;
   text-transform: uppercase;
   border: none;
-  cursor: pointer;
   color: $secondary-color-text;
   background-color: $special-color-bg;
   outline: none;
+  cursor: pointer;
 }
 
 .news__button:hover,
@@ -95,23 +95,24 @@
   color: rgba($secondary-color-text, 0.3);
 }
 
-@media (min-width: $tablet-width) {
+@media screen and (min-width: $tablet-width) {
   .news {
     width: $tablet-width;
     padding: 2px 30px;
   }
 
   .news__title {
+    margin: 0;
+    padding: 0 40px 61px;
     font-size: 32px;
     line-height: 32px;
-    padding: 0 41px 61px;
   }
 
   .news__title::before {
     content: "";
     position: absolute;
     display: block;
-    top: 13px;
+    top: 14px;
     right: 100%;
     width: 100vw;
     height: 2px;
@@ -119,7 +120,7 @@
   }
 
   .news__title::after {
-    top: 13px;
+    top: 14px;
     right: 0;
   }
 
@@ -127,7 +128,7 @@
     width: 80%;
     font-size: 24px;
     line-height: 32px;
-    padding: 4px 0 0;
+    padding: 5px 0 0;
   }
 
   .news__form {
@@ -140,10 +141,10 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media screen and (min-width: $desktop-width) {
   .news {
     width: $desktop-width;
-    padding: 17px 69px 25px;
+    padding: 17px 69px 25px 70px;
   }
 
   .news__title {
@@ -152,11 +153,11 @@
   }
 
   .news__title::before {
-    top: 18px;
+    top: 17px;
   }
 
   .news__title::after {
-    top: 18px;
+    top: 17px;
   }
 
   .news__description {

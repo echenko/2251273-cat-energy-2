@@ -7,7 +7,7 @@
   gap: 18px;
   width: 280px;
   height: 290px;
-  margin: 33px 0 0;
+  margin: 20px 0 0;
   padding: 0;
   background-color: $special-color-bg;
   background-image:
@@ -41,7 +41,7 @@
 .promo__title {
   display: flex;
   width: 161px;
-  margin: 0;
+  margin: 0 3px 0 0;
   padding: 0 0 43px;
   font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
@@ -52,7 +52,7 @@
   color: $secondary-color-text;
 }
 
-@media (min-width: $tablet-width) {
+@media screen and (min-width: $tablet-width) {
   .promo {
     flex-direction: row;
     align-items: center;
@@ -80,15 +80,17 @@
   .promo__icon {
     width: 80px;
     height: 82px;
-    transform: translateY(-24px) translateX(48px);
+    transform: translateY(-23px) translateX(48px);
   }
 
   .promo__title {
     text-align: left;
+    margin: 0;
+    padding: 0 0 39px;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media screen and (min-width: $desktop-width) {
   .promo {
     flex-direction: column;
     width: 245px;
