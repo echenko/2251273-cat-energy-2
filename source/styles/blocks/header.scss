@@ -21,6 +21,16 @@
   gap: 55px;
 }
 
+.header__logo:hover,
+.header__logo:focus {
+  opacity: 0.8;
+  outline: none;
+}
+
+.header__logo:active {
+  opacity: 0.6;
+}
+
 .header__button {
   width: 24px;
   height: 24px;

@@ -44,6 +44,16 @@
   cursor: pointer;
 }
 
+.navigation__link:hover,
+.navigation__link:focus {
+  opacity: 0.6;
+  outline: none;
+}
+
+.navigation__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .navigation {
     display: flex;

@@ -81,6 +81,16 @@
   text-decoration: none;
 }
 
+.hero__button:hover,
+.hero__button:focus {
+  background-color: $hover-color-bg;
+  outline: none;
+}
+
+.hero__button:active {
+  color: rgba($secondary-color-text, 0.3);
+}
+
 @media (min-width: $tablet-width) {
   .hero {
     width: $tablet-width;
