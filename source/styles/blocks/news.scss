@@ -59,7 +59,16 @@
   letter-spacing: 0%;
   color: $special-color-text;
   text-transform: uppercase;
-  border: 1px solid $auxiliary-color-border;
+  border: 1px solid $primary-color-border;
+  outline: none;
+}
+
+.news__input:hover {
+  border: 1px solid $secondary-color-border;
+}
+
+.news__input:focus {
+  border: 1px solid $additional-color-border;
 }
 
 .news__button {
@@ -74,6 +83,16 @@
   cursor: pointer;
   color: $secondary-color-text;
   background-color: $special-color-bg;
+  outline: none;
+}
+
+.news__button:hover,
+.news__button:focus {
+  background-color: $hover-color-bg;
+}
+
+.news__button:active {
+  color: rgba($secondary-color-text, 0.3);
 }
 
 @media (min-width: $tablet-width) {

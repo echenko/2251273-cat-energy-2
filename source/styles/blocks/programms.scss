@@ -108,9 +108,24 @@
 .programms__button::after {
   content: "";
   display: block;
+  width: 24px;
+  height: 12px;
+  background-image: url("../../icons/stack.svg#icon-arrow");
+}
+
+.programms__button:hover,
+.programms__button:focus {
+  outline: none;
+}
+
+.programms__button:hover.programms__button::after,
+.programms__button:focus.programms__button::after {
   width: 32px;
   height: 10px;
-  background-image: url("../../icons/stack.svg#icon-arrow");
+}
+
+.programms__button:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
