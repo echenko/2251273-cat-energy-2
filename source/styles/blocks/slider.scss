@@ -49,6 +49,7 @@
 .slider__button:focus {
   background-color: $special-color-bg;
   outline: none;
+  cursor: pointer;
 }
 
 .slider__button:active {

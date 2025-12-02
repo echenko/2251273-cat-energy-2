@@ -48,6 +48,13 @@
   border: none;
 }
 
+.show-more__button:hover,
+.show-more__button:focus {
+  outline: none;
+  background-color: $additional-color-bg;
+  cursor: pointer;
+}
+
 @media (min-width: $tablet-width) {
   .show-more {
     width: 100%;

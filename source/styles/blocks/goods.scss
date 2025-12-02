@@ -100,12 +100,21 @@
   letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
-
   color: $secondary-color-text;
   background-color: $special-color-bg;
   border: none;
   cursor: pointer;
   bottom: none;
+}
+
+.goods__button:hover,
+.goods__button:focus {
+  background-color: $hover-color-bg;
+  outline: none;
+}
+
+.goods__button:active {
+  color: rgba($secondary-color-text, 0.3);
 }
 
 @media (min-width: $tablet-width) {
@@ -164,7 +173,6 @@
 
   .goods__description,
   .goods__price {
-    // place-self: end end;
     font-size: 16px;
     line-height: 20px;
   }
