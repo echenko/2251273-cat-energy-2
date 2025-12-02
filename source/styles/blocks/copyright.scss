@@ -29,7 +29,7 @@
   color: $special-color-bg;
 }
 
-@media (min-width: $tablet-width) {
+@media screen and (min-width: $tablet-width) {
   .copyright {
     width: fit-content;
     place-self: center end;
@@ -39,7 +39,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media screen and (min-width: $desktop-width) {
   .copyright {
     width: fit-content;
     place-self: center end;

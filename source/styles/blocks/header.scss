@@ -7,10 +7,10 @@
 }
 
 .header__wrapper {
-  width: $mobile-width;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: $mobile-width;
   padding: 13px 21px 9px 20px;
 }
 
@@ -56,7 +56,7 @@
   display: none;
 }
 
-@media (min-width: $tablet-width) {
+@media screen and (min-width: $tablet-width) {
   .header {
     width: $tablet-width;
     flex-flow: row nowrap;
@@ -82,7 +82,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media screen and (min-width: $desktop-width) {
   .header {
     display: grid;
     grid-template-columns: repeat(2, 610px);

@@ -29,9 +29,9 @@
 }
 
 .about__wrapper {
+  flex-shrink: 0;
   width: 60px;
   height: 60px;
-  flex-shrink: 0;
   background-color: $special-color-bg;
 }
 
@@ -52,7 +52,7 @@
   color: $special-color-text;
 }
 
-@media (min-width: $tablet-width) {
+@media screen and (min-width: $tablet-width) {
   .about {
     width: $tablet-width;
     padding: 45px 30px 7px;
@@ -109,7 +109,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media screen and (min-width: $desktop-width) {
   .about {
     width: $desktop-width;
     padding: 31px 110px 7px;
