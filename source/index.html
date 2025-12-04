@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>Cat Energy - Главная</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- preload -->
+  <link rel="preload" href="./styles/styles.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswald/Oswald-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
   <!-- style -->
   <link rel="stylesheet" href="./styles/styles.css">
   <!-- favicon -->
@@ -70,7 +74,7 @@
           srcset="./images/hero/tablet-image-hero@1x.png 1x, ./images/hero/tablet-image-hero@2x.png 2x"
           type="image/jpeg" width="709" height="609">
         <img class="hero__image" src="./images/hero/mobile-image-hero@1x.png" srcset="./images/hero/mobile-hero@2x.png"
-          alt="Hero image" width="280" height="270">
+          alt="Hero image" width="280" height="270" loading="lazy">
       </picture>
       <a class="hero__button" href="./form.html">Подобрать программу</a>
     </section>
@@ -174,7 +178,7 @@
                 srcset="./images/example/tablet-example-before@1x.png 1x, ./images/example/tablet-example-before@2x.png 2x"
                 type="image/jpeg" width="560" height="512">
               <img class="slider__image slider__image--before" src="./images/example/mobile-example-before@1x.png"
-                srcset="./images/example/mobile-example-before@2x.png" alt="Hero image" width="280" height="256">
+                srcset="./images/example/mobile-example-before@2x.png" alt="Hero image" width="280" height="256" loading="lazy">
             </picture>
           </div>
           <div class="slider__after">
@@ -191,7 +195,7 @@
                 srcset="./images/example/tablet-example-after@1x.png 1x, ./images/example/tablet-example-after@2x.png 2x"
                 type="image/jpeg" width="560" height="512">
               <img class="slider__image slider__image--after" src="./images/example/mobile-example-after@1x.png"
-                srcset="./images/example/mobile-example-after@2x.png" alt="Hero image" width="280" height="256">
+                srcset="./images/example/mobile-example-after@2x.png" alt="Hero image" width="280" height="256" loading="lazy">
             </picture>
           </div>
           <label for="slider">
